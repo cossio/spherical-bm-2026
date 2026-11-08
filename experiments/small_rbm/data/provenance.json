@@ -1,0 +1,16 @@
+{
+  "reference_pdf_sha256": {
+    "eta": "fbe1aed1456a580c407f3e41a1d33a8bf98e3c50727f3ffb1e44816492da0186",
+    "gamma": "d4b0aae323f82e9dbe58de0ab2b9d8a3734e8433d57061ff217ebbb9b06738ab",
+    "beta": "4ca9c52b38c15c29c3a945c95e3ce4065d7e1b14147c667947702326b0227564",
+    "nu": "3065ff33f40c76806af86943a0e6cd8ab69d4070f5ba5fc26c41909ea592ef25"
+  },
+  "source_data_sha256": {
+    "eta_report": "dc2410dcc1ff642be24b794d08ec7506016d02c10e096183512a5855b56f6c1b",
+    "gamma_manifest": "1e3f407132a781ec68619b5d56fb1e91da9e62c7199bbdeffefac14d46143910",
+    "beta_spectral": "9408d87a11d79e3c8300fc6632b4655106a9f4be3aef8d45c58e8e633c2b3321",
+    "nu_summary": "61db0bceabb93bb1d5f34b44b088ec259aafc5047287e051ce0084bd0af2124b",
+    "map_curve": "d7ca47f9fedb1d26510f9290175b19618e447d7bde3ad074c8b6238196616218"
+  },
+  "coverage": "Compact plotting data and chosen MAP fits; full posterior chains and MAP candidate optimization archives are omitted."
+}

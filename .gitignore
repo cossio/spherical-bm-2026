@@ -1,0 +1,12 @@
+_julia_env/Manifest*.toml
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+*.png
+# Figure reconstructions; exact manuscript assets are in reference_figures/.
+fig23_24_temperature_tuning/figures/
+fig25_fvsbn_K_dd/fig_fvsbn_K_dd.pdf
+fig26_rbm_finance_double_descent/data/I_gauss_fixed/*.pdf
+fig27_bayesgan_unimodal/figures/
+fig28_29_ooe_lattice_protein/fig_ooe_*.pdf

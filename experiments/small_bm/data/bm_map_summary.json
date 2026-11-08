@@ -1,0 +1,365 @@
+{
+  "experiment": "Current Appendix G.1 fully-visible binary BM MAP gamma sweep",
+  "N": 12,
+  "K": 1,
+  "omega": 3.0,
+  "parameter_dimension": 66,
+  "posterior_inverse_temperature": "infinity (MAP)",
+  "posterior_loss": "logZ(J)-sum_unique(J_ij*xi_i*xi_j)+N*gamma/2*sum_unique(J_ij^2)",
+  "matrix_prior_equivalent": "N*gamma/4*Tr(J^2); zero diagonal symmetric J",
+  "optimization_scope": "All 66 independent offdiagonal couplings; symmetry reduction follows from strict convexity, without a rank constraint",
+  "global_optimality_certificate": "Hessian=Cov_J(pair_features)+N*gamma*I >= N*gamma*I; zero full gradient identifies the unique global minimum",
+  "method": "Brent scalar root of N*gamma*a=1-c(a), exact binomial shell sums; independent full-state/full-parameter audits",
+  "data_average": "Exact average over all 4096 one-sample datasets with their teacher probabilities",
+  "units": "Total nats; no nats-per-spin normalization",
+  "uncertainty": "Deterministic exact finite sums to numerical precision; no Monte Carlo or dataset sampling uncertainty",
+  "coupling_reconstruction": "J_unique[gamma,datum]=canonical_unique_couplings[gamma]*dataset_gauge_features[datum]; symmetric matrix via unique_i/unique_j; diagonal zero",
+  "gamma_count": 715,
+  "gamma_min": 1e-11,
+  "gamma_max": 1000000.0,
+  "old_gamma_count": 67,
+  "old_grid_included_exactly": true,
+  "reverse_kl_minimum": {
+    "gamma": 0.006603955045704656,
+    "a": 0.24560712274497687,
+    "value": 0.2845659548248616
+  },
+  "uniform_reverse": 8.926475085689981,
+  "weak_gamma_reverse_limit": 0.34102397068090673,
+  "gamma_zero_note": "At gamma=0 there is no finite maximum-likelihood coupling; only a->infinity and a limiting distribution on +/-xi. No finite gamma=0 MAP is plotted.",
+  "no_second_descent_certificate": {
+    "derivative_with_respect_to_a": "d R/da = DIM*(a-omega*c_teacher/N)*c_prime(a)",
+    "facts": "c_prime(a)>0 and da/dgamma<0 for finite gamma>0; hence exactly one minimum and thereafter strict increase to the uniform limit from below",
+    "second_descent_detected": false,
+    "finite_size_scope": "Exact for this K=1 zero-field full BM and teacher, without thermodynamic or cold-posterior approximation"
+  },
+  "independent_checks_performed": true,
+  "checks": {
+    "full_dimensional_gradient_checks": [
+      {
+        "gamma": 1e-11,
+        "datum_code": 591,
+        "gradient_inf": 6.74735366745371e-15,
+        "hessian_min_eigenvalue": 1.2000000139578436e-10,
+        "strict_convexity_lower_bound": 1.2e-10,
+        "objective": 0.6931471857216396,
+        "objective_gap_bound_from_gradient": 1.2519864916267784e-17,
+        "shell_objective_difference": 6.772360450213455e-15
+      },
+      {
+        "gamma": 1e-05,
+        "datum_code": 28,
+        "gradient_inf": 1.3310140207882515e-15,
+        "hessian_min_eigenvalue": 0.00012002771297813245,
+        "strict_convexity_lower_bound": 0.00012000000000000002,
+        "objective": 0.6943367075179142,
+        "objective_gap_bound_from_gradient": 1.1684467722199505e-25,
+        "shell_objective_difference": 5.551115123125783e-16
+      },
+      {
+        "gamma": 0.001,
+        "datum_code": 2072,
+        "gradient_inf": 1.4137996329210978e-15,
+        "hessian_min_eigenvalue": 0.012054208097983675,
+        "strict_convexity_lower_bound": 0.012,
+        "objective": 0.7443209213882175,
+        "objective_gap_bound_from_gradient": 1.6624629787671903e-27,
+        "shell_objective_difference": 8.881784197001252e-16
+      },
+      {
+        "gamma": 0.01,
+        "datum_code": 3359,
+        "gradient_inf": 1.3773704399255848e-15,
+        "hessian_min_eigenvalue": 0.12218932513045896,
+        "strict_convexity_lower_bound": 0.12,
+        "objective": 0.9832915459449236,
+        "objective_gap_bound_from_gradient": 9.206998377109324e-29,
+        "shell_objective_difference": 2.220446049250313e-16
+      },
+      {
+        "gamma": 0.1,
+        "datum_code": 1702,
+        "gradient_inf": 2.6922908347160046e-15,
+        "hessian_min_eigenvalue": 1.2674703526894486,
+        "strict_convexity_lower_bound": 1.2000000000000002,
+        "objective": 2.131705998622447,
+        "objective_gap_bound_from_gradient": 3.77257577273053e-29,
+        "shell_objective_difference": 8.881784197001252e-16
+      },
+      {
+        "gamma": 1.0,
+        "datum_code": 1139,
+        "gradient_inf": 8.881784197001252e-16,
+        "hessian_min_eigenvalue": 12.717405033785985,
+        "strict_convexity_lower_bound": 12.0,
+        "objective": 5.9328439209913375,
+        "objective_gap_bound_from_gradient": 1.8591643729818117e-31,
+        "shell_objective_difference": 0.0
+      },
+      {
+        "gamma": 10.0,
+        "datum_code": 4017,
+        "gradient_inf": 3.3306690738754696e-16,
+        "hessian_min_eigenvalue": 120.98224824091794,
+        "strict_convexity_lower_bound": 120.0,
+        "objective": 8.04517020680528,
+        "objective_gap_bound_from_gradient": 4.57087373467904e-33,
+        "shell_objective_difference": 0.0
+      },
+      {
+        "gamma": 1000.0,
+        "datum_code": 1518,
+        "gradient_inf": 8.881784197001252e-16,
+        "hessian_min_eigenvalue": 12000.999833229098,
+        "strict_convexity_lower_bound": 12000.0,
+        "objective": 8.315016395994268,
+        "objective_gap_bound_from_gradient": 9.244463733058732e-34,
+        "shell_objective_difference": 0.0
+      },
+      {
+        "gamma": 1000000.0,
+        "datum_code": 474,
+        "gradient_inf": 9.992007221626409e-16,
+        "hessian_min_eigenvalue": 12000000.999999804,
+        "strict_convexity_lower_bound": 12000000.0,
+        "objective": 8.317763416719572,
+        "objective_gap_bound_from_gradient": 1.3758843522702413e-36,
+        "shell_objective_difference": 1.7763568394002505e-15
+      }
+    ],
+    "unconstrained_fits": [
+      {
+        "gamma": 0.001,
+        "datum_code": 3088,
+        "initialization": 0,
+        "scipy_success": false,
+        "scipy_message": "A bad approximation caused failure to predict improvement.",
+        "iterations": 23,
+        "newton_polish_steps": 3,
+        "gradient_inf": 8.300651832549022e-16,
+        "coupling_inf_error": 5.745404152435185e-14,
+        "objective_difference": 5.551115123125783e-16
+      },
+      {
+        "gamma": 0.001,
+        "datum_code": 3088,
+        "initialization": 1,
+        "scipy_success": false,
+        "scipy_message": "A bad approximation caused failure to predict improvement.",
+        "iterations": 9,
+        "newton_polish_steps": 3,
+        "gradient_inf": 2.168404344971009e-15,
+        "coupling_inf_error": 7.360778653264788e-14,
+        "objective_difference": 9.992007221626409e-16
+      },
+      {
+        "gamma": 0.01,
+        "datum_code": 2687,
+        "initialization": 0,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 8,
+        "newton_polish_steps": 3,
+        "gradient_inf": 5.551115123125783e-16,
+        "coupling_inf_error": 8.715250743307479e-15,
+        "objective_difference": 1.9984014443252818e-15
+      },
+      {
+        "gamma": 0.01,
+        "datum_code": 2687,
+        "initialization": 1,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 8,
+        "newton_polish_steps": 3,
+        "gradient_inf": 1.412064909445121e-15,
+        "coupling_inf_error": 8.798517470154366e-15,
+        "objective_difference": 2.220446049250313e-16
+      },
+      {
+        "gamma": 0.1,
+        "datum_code": 2176,
+        "initialization": 0,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 6,
+        "newton_polish_steps": 3,
+        "gradient_inf": 7.216449660063518e-16,
+        "coupling_inf_error": 8.049116928532385e-16,
+        "objective_difference": -1.3322676295501878e-15
+      },
+      {
+        "gamma": 0.1,
+        "datum_code": 2176,
+        "initialization": 1,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 6,
+        "newton_polish_steps": 3,
+        "gradient_inf": 6.38378239159465e-16,
+        "coupling_inf_error": 7.771561172376096e-16,
+        "objective_difference": -3.9968028886505635e-15
+      },
+      {
+        "gamma": 1.0,
+        "datum_code": 3167,
+        "initialization": 0,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 4,
+        "newton_polish_steps": 3,
+        "gradient_inf": 2.220446049250313e-16,
+        "coupling_inf_error": 8.326672684688674e-17,
+        "objective_difference": 0.0
+      },
+      {
+        "gamma": 1.0,
+        "datum_code": 3167,
+        "initialization": 1,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 5,
+        "newton_polish_steps": 3,
+        "gradient_inf": 3.3306690738754696e-16,
+        "coupling_inf_error": 5.551115123125783e-17,
+        "objective_difference": 8.881784197001252e-16
+      },
+      {
+        "gamma": 10.0,
+        "datum_code": 1828,
+        "initialization": 0,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 4,
+        "newton_polish_steps": 3,
+        "gradient_inf": 2.220446049250313e-16,
+        "coupling_inf_error": 3.469446951953614e-18,
+        "objective_difference": 0.0
+      },
+      {
+        "gamma": 10.0,
+        "datum_code": 1828,
+        "initialization": 1,
+        "scipy_success": true,
+        "scipy_message": "Optimization terminated successfully.",
+        "iterations": 4,
+        "newton_polish_steps": 3,
+        "gradient_inf": 2.220446049250313e-16,
+        "coupling_inf_error": 3.469446951953614e-18,
+        "objective_difference": 0.0
+      },
+      {
+        "gamma": 100.0,
+        "datum_code": 2045,
+        "initialization": 0,
+        "scipy_success": false,
+        "scipy_message": "A bad approximation caused failure to predict improvement.",
+        "iterations": 3,
+        "newton_polish_steps": 3,
+        "gradient_inf": 0.0,
+        "coupling_inf_error": 5.421010862427522e-19,
+        "objective_difference": 0.0
+      },
+      {
+        "gamma": 100.0,
+        "datum_code": 2045,
+        "initialization": 1,
+        "scipy_success": false,
+        "scipy_message": "A bad approximation caused failure to predict improvement.",
+        "iterations": 3,
+        "newton_polish_steps": 3,
+        "gradient_inf": 0.0,
+        "coupling_inf_error": 5.421010862427522e-19,
+        "objective_difference": 0.0
+      }
+    ],
+    "all_dataset_direct_kl_checks": [
+      {
+        "gamma": 0.001,
+        "forward_error": 1.6653345369377348e-15,
+        "reverse_error": 1.27675647831893e-15,
+        "datasets_enumerated": 4096,
+        "states_per_dataset": 4096
+      },
+      {
+        "gamma": 0.01,
+        "forward_error": 5.551115123125783e-17,
+        "reverse_error": 1.9984014443252818e-15,
+        "datasets_enumerated": 4096,
+        "states_per_dataset": 4096
+      },
+      {
+        "gamma": 0.1,
+        "forward_error": 6.661338147750939e-16,
+        "reverse_error": 1.3322676295501878e-15,
+        "datasets_enumerated": 4096,
+        "states_per_dataset": 4096
+      },
+      {
+        "gamma": 1.0,
+        "forward_error": 9.325873406851315e-15,
+        "reverse_error": 3.552713678800501e-15,
+        "datasets_enumerated": 4096,
+        "states_per_dataset": 4096
+      },
+      {
+        "gamma": 10.0,
+        "forward_error": 2.6645352591003757e-14,
+        "reverse_error": 2.3092638912203256e-14,
+        "datasets_enumerated": 4096,
+        "states_per_dataset": 4096
+      }
+    ],
+    "finite_difference_check": {
+      "directional_gradient_error": 2.7441382499659994e-11,
+      "hessian_vector_inf_error": 2.6460666990857362e-11
+    },
+    "reverse_kl_derivative_checks": [
+      {
+        "gamma": 0.001,
+        "analytic_derivative": -15.789512342791598,
+        "central_difference": -15.789512364250411,
+        "relative_or_absolute_error": 1.359054854070868e-09
+      },
+      {
+        "gamma": 0.01,
+        "analytic_derivative": 2.3114650432750423,
+        "central_difference": 2.311465030047088,
+        "relative_or_absolute_error": 5.722757662276664e-09
+      },
+      {
+        "gamma": 0.1,
+        "analytic_derivative": 8.917495928212938,
+        "central_difference": 8.917495923732588,
+        "relative_or_absolute_error": 5.024224680382987e-10
+      },
+      {
+        "gamma": 1.0,
+        "analytic_derivative": 2.8937201047969694,
+        "central_difference": 2.893720123053889,
+        "relative_or_absolute_error": 6.309151842798482e-09
+      },
+      {
+        "gamma": 10.0,
+        "analytic_derivative": 0.015182823599102644,
+        "central_difference": 0.01518282376800073,
+        "relative_or_absolute_error": 1.6889808648890003e-10
+      }
+    ],
+    "dataset_array_forward_weighted_mean_error": 1.4477308241112041e-13,
+    "dataset_array_reverse_weighted_mean_error": 2.7711166694643907e-13,
+    "scalar_stationarity_max": 1.9206858326015208e-14,
+    "unique_coupling_count": 66
+  },
+  "curve_arrays_sha256": "82ab79d3966092550b5fcb839f1e8886a79b1a4c9b3c693fa6312a0c2b0a58a6",
+  "runtime_seconds": 1.7535476624034345,
+  "seed_for_checks": 2026110701,
+  "software": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "execution": {
+    "threads": 1
+  }
+}

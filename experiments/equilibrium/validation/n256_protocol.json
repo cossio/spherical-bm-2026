@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-11-06T22:33:39.077030+00:00",
+  "scope": "Extend only the six eta=4 settings plotted in Fig. 8 A/B to N=256. Original N=32,64,128 primary grid and independent N=128 replication remain unchanged. No binary BM/RBM experiments or new edge-coalesced claims.",
+  "design": {
+    "N": 256,
+    "cases": [
+      "deep_coalesced",
+      "two_condensed",
+      "coalescence_boundary",
+      "one_condensed",
+      "condensation_boundary",
+      "pm_outlier"
+    ],
+    "eta": 4.0,
+    "c": [
+      1.25,
+      0.75
+    ],
+    "chains": 4,
+    "warmup": 100000,
+    "production_by_case": {
+      "deep_coalesced": 2400000,
+      "two_condensed": 1200000,
+      "coalescence_boundary": 1200000,
+      "one_condensed": 1200000,
+      "condensation_boundary": 1200000,
+      "pm_outlier": 1200000
+    },
+    "thin": 20,
+    "measurement_spins": 16,
+    "seed_formula": "102561001 + 100*case_index + (chain-1)",
+    "case_index_origin": 0,
+    "starts": [
+      "prior",
+      "data_aligned",
+      "random_coalesced",
+      "broad_prior"
+    ],
+    "adaptation": "warmup only; production rho fixed"
+  },
+  "gates": {
+    "min_chains": 4,
+    "rhat_limit": 1.01,
+    "ess_min": 400,
+    "score_abs_z_limit": 4
+  },
+  "rationale": "Existing deep-coalesced minimum bulk ESS stays approximately constant under 150k/300k/600k production lengths at N=32/64/128. Double the N128 length at N256, with an extra factor two for deep coalescence because the prior stationarity audit exposed slower fluctuations. Timing pilots are separate and excluded from estimates.",
+  "stationarity": "Inspect fixed half, quarter and twelve-block summaries for all six groups. These are descriptive and cannot be used to select or discard draws. Investigate coherent drift or failed gates; record any follow-up separately without repeat-until-pass selection.",
+  "estimates": "Use all production draws from the four prespecified chains per group. Report autocorrelation-aware Monte Carlo intervals separately from finite-size offsets. No extrapolation exponent is fitted.",
+  "source_sha256": {
+    "run_chain.jl": "e2b4f13e03c53c093b25bfa048fd5e872863ab7700eea177f0d3e1e2ad982b37",
+    "bingham.jl": "970059e31101bb2f96880fc6578d1aa5285f31c9268483026a0cbb629c57c3e9",
+    "config.toml": "53ed71b31a9614932cb12668f2d8e92dcc33e02127adf2285de1be19ad4138bc",
+    "analyze.py": "bcd3812e3ef7da2697eb30873aa0e030d7c712b598af7ea7d1abf26829e8fb87"
+  },
+  "manifest_path": "manifests/n256.tsv",
+  "manifest_sha256": "4832c64a1ebc01271b3dca338a33b38a274d858192555deb46d3d0f24a018373",
+  "original_summary_sha256": "a4f9d06cf7fda25d1765e96477ddcaf7a33955ce8c01a35c405ad843225357a3",
+  "original_delivery_inventory_path": "validation/delivery.sha256",
+  "original_delivery_inventory_sha256": "81f700eff0a56230ad2ecbfad8b93e0cf2ff5d352b837fc0e5cd4952a3acdd82",
+  "protocol_generator_sha256": "151753dc58af0597b55fbb7557db60b0760824b8830d930ad88af13c676803c6"
+}

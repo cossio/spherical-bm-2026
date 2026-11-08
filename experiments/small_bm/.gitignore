@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+reproduced/
+results/
+validation/map_replay/
+validation/gamma_replay/
+validation/gamma_sanity/

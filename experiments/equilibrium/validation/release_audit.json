@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "manuscript_figure": "Figure 8, finite-size equilibrium validation",
+  "manuscript_pdf_sha256": "3fecc7a683e29ca634da732cbecd607bab67325b7e93bea0bc5a991c12af89a1",
+  "production": {
+    "raw_chains_reanalyzed": 96,
+    "case_size_groups": 24,
+    "groups_passing": 24,
+    "fresh_summary_statistics_equal_saved": true,
+    "original_draw_and_metadata_hashes_verified": true
+  },
+  "controls": {
+    "raw_chains_reanalyzed": 8,
+    "groups_passing": 2,
+    "fresh_summary_statistics_equal_saved": true,
+    "exact_N2_quadrature_matches_saved": true
+  },
+  "replication": {
+    "original_and_replication_chains": 8,
+    "protocol_passed": true,
+    "fresh_comparison_rows_equal_saved": true,
+    "max_monitored_difference_z": 0.9828749907176934
+  },
+  "bingham_kernel": {
+    "tests_passed": 9080,
+    "tests_total": 9080,
+    "julia_version": "1.12.6"
+  },
+  "diagnostic_self_test": {
+    "self_test": "PASS",
+    "iid_rhat": 0.9999021032845579,
+    "separated_rhat": 1.5379312453542493,
+    "ar1_mcse_over_naive": 5.80697467369522,
+    "ar1_bulk_ess": 594.4828447195074,
+    "command": "uv run --locked scripts/analyze.py --self-test"
+  },
+  "saddle_prediction_files_byte_identical_after_recomputation": true,
+  "figure": {
+    "saved_points_verified": 54,
+    "rendered_pixel_match_at_144dpi": true,
+    "coordinate_normalized_validator_pass": true,
+    "embedded_raster_images": 0,
+    "visual_review_pass": true
+  },
+  "scope": "Raw traces were available during release preparation but are not bundled. verify_saved.py checks the portable compact release; full fresh MCMC diagnostics require the documented rerun.",
+  "source_changes": "Sampler, Bingham kernel, analyzer, replication comparator, protocol, manifests and original configuration remain byte-identical. Plotting additionally supports the compact dataset; report generation resolves the isolated saddle source. Saved records have personal paths and scheduler IDs removed.",
+  "audit_scope": "Historical release audit for the unchanged original cohorts and prior three-size figure. The current four-size figure and N=256 cohort are audited in n256_release_audit.json and figure_reproduction.json."
+}

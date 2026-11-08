@@ -1,0 +1,3 @@
+Julia 1.12.6; standard libraries; one-process numerical checks.
+Test Summary:         | Pass  Total
+Exact Bingham sampler | 9080   9080

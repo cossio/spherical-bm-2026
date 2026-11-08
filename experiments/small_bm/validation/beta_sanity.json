@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Curie-Weiss binomial partition sum",
+    "upper triangle versus quadratic energy",
+    "posterior gradient finite differences",
+    "MAP stationarity",
+    "generated covariance independent loop",
+    "forward and reverse shell chain rules"
+  ],
+  "max_gradient_fd_error": 2.3402773052794146e-09,
+  "map_gradient_residual": 2.4658662867160785e-07
+}

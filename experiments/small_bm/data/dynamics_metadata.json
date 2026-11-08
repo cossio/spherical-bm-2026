@@ -1,0 +1,607 @@
+{
+  "experiment": "independent reconstruction of camera-ready out-of-equilibrium small binary BM figure",
+  "n": 12,
+  "k": 48,
+  "omega": 1.5,
+  "gamma": 0.8,
+  "learning_rate": 0.003,
+  "datasets": 50,
+  "replicas": 3,
+  "particles_per_replica": 1,
+  "seed": 2026110304,
+  "steps": 600,
+  "checkpoint_spacing": 5,
+  "ridge": 0.8,
+  "regularization_convention": "mean-loss-gamma",
+  "mean_objective": "log Z - cdata dot j + (ridge/2) sum_{i<j} J_ij^2",
+  "metric_order": [
+    "lambda1",
+    "alignment_squared_empirical",
+    "kl_forward_total_nats",
+    "kl_reverse_total_nats"
+  ],
+  "array_axes": {
+    "metrics": [
+      "dataset",
+      "replica",
+      "sampling_rate",
+      "checkpoint",
+      "metric"
+    ],
+    "couplings": [
+      "dataset",
+      "replica",
+      "sampling_rate",
+      "checkpoint",
+      "i",
+      "j"
+    ]
+  },
+  "assumed_conventions": [
+    "Regularizer 0.8/2 times sum_{i<j} J_ij^2 in the MEAN negative log posterior; The paper convention has gamma_paper=(K/N)*ridge.",
+    "Mean likelihood gradient cdata-cmodel-ridge*J, with the quoted learning rate; see regularization_convention.",
+    "Each persistent-chain replica is an independent optimization run; particles_per_replica controls simultaneous negative-phase chains.",
+    "Random-scan heat-bath Gibbs; each reported single-site update is applied once per particle.",
+    "All coupling matrices start exactly zero; persistent particles start independently uniform.",
+    "Gibbs negative phase precedes the coupling update; empirical direction uses uncentered second moment.",
+    "Datasets and initialization/random-stream seeds are paired across sampling rates.",
+    "Replicates averaged within datasets; pointwise 95% Student-t confidence intervals over independent datasets.",
+    "No smoothing or time-axis rescaling; total KL in nats, not per spin.",
+    "Leading-eigenvector alignment at exactly zero J is undefined and stored as NaN."
+  ],
+  "checks": {
+    "matrix_feature_energy_max_error": 6.661338147750939e-16,
+    "objective_gradient_finite_difference_max_error": 1.2796602943954127e-09,
+    "teacher_kl_max_abs": 8.881784197001252e-15,
+    "teacher_eigenvalue_error": 2.220446049250313e-16,
+    "one_site_gibbs_stationarity_max_error": 2.710505431213761e-19,
+    "state_count": 4096
+  },
+  "map_diagnostics": [
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.7139067942650854e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 6.522560269672795e-16,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.7486012637846216e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.942890293094024e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.4702462297909733e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.0547118733938987e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.525757381022231e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.3322676295501878e-15,
+      "iterations": 19,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 9.020562075079397e-16,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 4.631711680858075e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.033095913844818e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.3322676295501878e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 3.2057689836051395e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.0547118733938987e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 7.813194535799539e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.914335439641036e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 6.078471059822732e-15,
+      "iterations": 15,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.1094237467877974e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 9.43689570931383e-16,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 3.3514857555871913e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.1518563880486e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.6653345369377348e-15,
+      "iterations": 15,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.887379141862766e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.1246893133763933e-14,
+      "iterations": 14,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 3.941291737419306e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.4432899320127035e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.817990202823694e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 6.328271240363392e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.1102230246251565e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.1518563880486e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.4155343563970746e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.525757381022231e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.519617764955683e-15,
+      "iterations": 19,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.9698465908722937e-15,
+      "iterations": 15,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 8.326672684688674e-16,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 3.0531133177191805e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.970645868709653e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 9.992007221626409e-16,
+      "iterations": 19,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.0269562977782698e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.609823385706477e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 6.022959908591474e-15,
+      "iterations": 15,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 1.0547118733938987e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 6.591949208711867e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.1649348980190553e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.0122792321330962e-15,
+      "iterations": 19,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 5.663872149064275e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 6.338679581219253e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 6.2450045135165055e-15,
+      "iterations": 17,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 5.009881398621019e-15,
+      "iterations": 18,
+      "exact_hessian_polish": true
+    },
+    {
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "gradient_inf": 2.6367796834847468e-15,
+      "iterations": 16,
+      "exact_hessian_polish": true
+    }
+  ],
+  "map_mean": [
+    1.3190768962492563,
+    0.9955841956926242,
+    0.10020517687811402,
+    0.11304213389147039
+  ],
+  "sampling_rate_summary": [
+    {
+      "single_site_updates": 1,
+      "final_mean": [
+        1.6703392871742246,
+        0.9256509094683726,
+        0.5982876755669729,
+        0.48026576993567105
+      ],
+      "final_ci95_halfwidth": [
+        0.0645298218370601,
+        0.007062890486709781,
+        0.054183851759845095,
+        0.04067520385351539
+      ],
+      "forward_minimum_step": 85,
+      "forward_minimum": 0.32603779426046386,
+      "reverse_minimum_step": 85,
+      "reverse_minimum": 0.2907237174848545
+    },
+    {
+      "single_site_updates": 3,
+      "final_mean": [
+        1.4193116998789086,
+        0.96688504327399,
+        0.2556833752997317,
+        0.2559595831292442
+      ],
+      "final_ci95_halfwidth": [
+        0.03776715337997259,
+        0.0025812096580060773,
+        0.020407822365634896,
+        0.021574141463256643
+      ],
+      "forward_minimum_step": 135,
+      "forward_minimum": 0.19190395284392378,
+      "reverse_minimum_step": 135,
+      "reverse_minimum": 0.18489598983948027
+    },
+    {
+      "single_site_updates": 6,
+      "final_mean": [
+        1.4035309426858935,
+        0.9814709888957661,
+        0.1659418687220205,
+        0.16972849265414489
+      ],
+      "final_ci95_halfwidth": [
+        0.028865439398189745,
+        0.001621441816226868,
+        0.017404161319506124,
+        0.018808207380507515
+      ],
+      "forward_minimum_step": 215,
+      "forward_minimum": 0.14498979962561212,
+      "reverse_minimum_step": 215,
+      "reverse_minimum": 0.14675514974258527
+    },
+    {
+      "single_site_updates": 12,
+      "final_mean": [
+        1.3562504578552386,
+        0.9874053580877138,
+        0.14143324120663137,
+        0.1509734615480917
+      ],
+      "final_ci95_halfwidth": [
+        0.02924599399097226,
+        0.0009840478295253439,
+        0.014266853493516694,
+        0.016363278415692642
+      ],
+      "forward_minimum_step": 175,
+      "forward_minimum": 0.10372576061260799,
+      "reverse_minimum_step": 175,
+      "reverse_minimum": 0.10846543432906641
+    },
+    {
+      "single_site_updates": 120,
+      "final_mean": [
+        1.3224447906782126,
+        0.9912945498754747,
+        0.11240742910566727,
+        0.1245133295465779
+      ],
+      "final_ci95_halfwidth": [
+        0.017458481334738703,
+        0.0007702574953067634,
+        0.013172155963019976,
+        0.015149400819490033
+      ],
+      "forward_minimum_step": 155,
+      "forward_minimum": 0.08933652999559417,
+      "reverse_minimum_step": 155,
+      "reverse_minimum": 0.09491158005544627
+    }
+  ],
+  "paired_final_slow_minus_fast": {
+    "mean": [
+      0.3478944964960124,
+      -0.0656436404071025,
+      0.4858802464613057,
+      0.35575244038909304
+    ],
+    "ci95_low": [
+      0.2860279626101772,
+      -0.07270843558146145,
+      0.43267441583307115,
+      0.31815344642035176
+    ],
+    "ci95_high": [
+      0.4097610303818476,
+      -0.05857884523274354,
+      0.5390860770895403,
+      0.3933514343578343
+    ]
+  },
+  "paired_final_slow_minus_map": {
+    "mean": [
+      0.35126239092496847,
+      -0.06993328622425189,
+      0.498082498688859,
+      0.36722363604420055
+    ],
+    "ci95_low": [
+      0.28999380016308035,
+      -0.07690726388770416,
+      0.44548329559016675,
+      0.33099404912921104
+    ],
+    "ci95_high": [
+      0.4125309816868566,
+      -0.06295930856079962,
+      0.5506817017875513,
+      0.40345322295919006
+    ]
+  },
+  "runtime_seconds": 21.759772640187293,
+  "versions": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "numba": "0.68.1"
+  },
+  "thread_limit": 2,
+  "iid_control": {
+    "description": "One exact independent equilibrium draw per parameter update, starting at each dataset's unique MAP; same learning rate and regularizer.",
+    "seed": 2026209423,
+    "final_interval": {
+      "mean": [
+        1.3278926027671958,
+        0.9909227614080099,
+        0.1156631266108994,
+        0.1300131030978553
+      ],
+      "ci95_low": [
+        1.3107478462609714,
+        0.9901724044358429,
+        0.10298417286833964,
+        0.11475667910168164
+      ],
+      "ci95_high": [
+        1.3450373592734202,
+        0.991673118380177,
+        0.12834208035345918,
+        0.14526952709402896
+      ]
+    },
+    "paired_final_minus_map": {
+      "mean": [
+        0.00881570651793878,
+        -0.004661434284614361,
+        0.015457949732785385,
+        0.016970969206384932
+      ],
+      "ci95_low": [
+        0.00013816597009454548,
+        -0.00533900524493565,
+        0.00995039767719405,
+        0.010347424485526828
+      ],
+      "ci95_high": [
+        0.017493247065783014,
+        -0.003983863324293071,
+        0.02096550178837672,
+        0.023594513927243037
+      ]
+    }
+  }
+}

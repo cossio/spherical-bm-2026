@@ -1,0 +1,63 @@
+{
+  "protocol": {
+    "N": 16,
+    "M": 3,
+    "K": 16,
+    "A1": 1.0,
+    "A2": 0.5,
+    "beta": 1.0,
+    "gamma": 3.4,
+    "lr": 0.02,
+    "refresh_probabilities": [
+      1.0,
+      0.25,
+      0.0625
+    ],
+    "replicates": 3,
+    "chains": 1,
+    "horizon": 3000.0,
+    "dense_until": 20.0,
+    "dense_interval": 0.1,
+    "coarse_interval": 10.0,
+    "init_scale": 0.01,
+    "validation_samples": 100000,
+    "schema": "matched_slow_nu_v1",
+    "source_sha256": {
+      "30_nu_slow.py": "46f71fd140b00606d7577f77ffd7f5a3b954073c151baf84bea2c2d0cf611242",
+      "nu_slow.py": "a5192be810104f42f93bf7c9fd1d9d506db229c41866307e53ed09a3c6ff23b6",
+      "nu_controls.py": "48ff409c7f06310ecfd6a89f78863b15a65cc624a05198e7dd64f103ef271bf5",
+      "rbm_exact.py": "35e7d7601da1d0e3919e5d52f0137953421dd4237039e269970ab8aa288cd630"
+    },
+    "dataset_rng": "default_rng(1000+seed)",
+    "initialization_rng": "default_rng(20000+seed)",
+    "initial_visible_rng": "SeedSequence([20261103,seed,replicate,chains,99]); original nu convention",
+    "clock_rng": "SeedSequence([20261105,seed,replicate,chains,p_as_float64_uint32_words,71])",
+    "sampler_rng": "SeedSequence([20261105,seed,replicate,chains,p_as_float64_uint32_words,kind_code,73])",
+    "gradient": "beta*(mean_data_v_tanh(beta*vW)-sampled_negative)-gamma/K*W",
+    "kernel": "with probability p per chain and update perform one blocked Gibbs sweep or exact equilibrium refresh; otherwise retain v but recompute its RB moment using current W",
+    "matching": "same dataset/W0/initialv; Gibbs and exact-refresh share Bernoulli clocks at matching p, transition random streams independent",
+    "observation_time": "W_n before update n; transition and exact/conditional/realized moments all evaluated at W_n; terminal point draws no extra transition",
+    "limitations": [
+      "Conditional expected residual given W and retained state is not unconditional training bias; average across replicate states before interpreting signed projections.",
+      "Instantaneous residual norms measure noise as well as lag and are not bias estimates.",
+      "Lazy exact refresh measures cadence and aging; matching Gibbs effects can still support generic out-of-equilibrium lag.",
+      "Dataset, not stochastic replica, is the independent unit for reported population contrasts.",
+      "WW^T is a spectral diagnostic, not the exact visible coupling of a binary-hidden RBM."
+    ]
+  },
+  "dataset_seeds": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "source_report_sha256": "61db0bceabb93bb1d5f34b44b088ec259aafc5047287e051ce0084bd0af2124b",
+  "replica_counts": {
+    "exact": 1,
+    "stochastic": 3
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": {
+    "released_file_hashes": true,
+    "beta_exact_KL_and_dataset_intervals": true,
+    "posterior_exact_predictive_KL_intervals_and_diagnostics": true,
+    "dynamics_replica_aggregation_and_dataset_intervals": true,
+    "gamma_source_summaries_and_method_specific_intervals": true,
+    "all_gamma_summary_replay_arrays": true,
+    "all_MAP_replay_arrays": true,
+    "rendered_figures": {
+      "generation_temperature": {
+        "identical_pixels": true,
+        "max_channel_difference": 0,
+        "mean_channel_difference": 0.0
+      },
+      "persistent_training": {
+        "identical_pixels": true,
+        "max_channel_difference": 0,
+        "mean_channel_difference": 0.0
+      },
+      "posterior_tempering": {
+        "identical_pixels": true,
+        "max_channel_difference": 0,
+        "mean_channel_difference": 0.0
+      },
+      "regularization_double_descent": {
+        "identical_pixels": true,
+        "max_channel_difference": 0,
+        "mean_channel_difference": 0.0
+      }
+    }
+  }
+}

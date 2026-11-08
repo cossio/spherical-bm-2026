@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "extractable_labels": 36,
+  "line_endpoints_normalized": 64,
+  "issues": [],
+  "checks": "all installed checks with unchanged default tolerances"
+}

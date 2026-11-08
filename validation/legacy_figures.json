@@ -1,0 +1,72 @@
+[
+  {
+    "file": "fig23_24_temperature_tuning/figures/fig_temperature_tuning_PF00072.pdf",
+    "reference": "fig_temperature_tuning_PF00072.pdf",
+    "single_page": true,
+    "text_characters": 442,
+    "raster_images": 1,
+    "dimensions_match": true,
+    "fraction_different_pixels_144dpi": 0.0,
+    "bundled_validator_exit_code": 1
+  },
+  {
+    "file": "fig23_24_temperature_tuning/figures/fig_temperature_tuning_PF00018.pdf",
+    "reference": "fig_temperature_tuning_PF00018.pdf",
+    "single_page": true,
+    "text_characters": 424,
+    "raster_images": 1,
+    "dimensions_match": true,
+    "fraction_different_pixels_144dpi": 0.0,
+    "bundled_validator_exit_code": 1
+  },
+  {
+    "file": "fig25_fvsbn_K_dd/fig_fvsbn_K_dd.pdf",
+    "reference": "fig_fvsbn_K_dd.pdf",
+    "single_page": true,
+    "text_characters": 369,
+    "raster_images": 0,
+    "dimensions_match": true,
+    "fraction_different_pixels_144dpi": 0.0,
+    "bundled_validator_exit_code": 0
+  },
+  {
+    "file": "fig26_rbm_finance_double_descent/data/I_gauss_fixed/fig_rbm_finance_double_descent.pdf",
+    "reference": "fig_rbm_finance_double_descent.pdf",
+    "single_page": true,
+    "text_characters": 256,
+    "raster_images": 0,
+    "dimensions_match": true,
+    "fraction_different_pixels_144dpi": 0.0,
+    "bundled_validator_exit_code": 1
+  },
+  {
+    "file": "fig27_bayesgan_unimodal/figures/fig_bayesgan_unimodal.pdf",
+    "reference": "fig_bayesgan_unimodal.pdf",
+    "single_page": true,
+    "text_characters": 153,
+    "raster_images": 0,
+    "dimensions_match": true,
+    "fraction_different_pixels_144dpi": 0.0,
+    "bundled_validator_exit_code": 0
+  },
+  {
+    "file": "fig28_29_ooe_lattice_protein/fig_ooe_potts.pdf",
+    "reference": "fig_ooe_potts.pdf",
+    "single_page": true,
+    "text_characters": 504,
+    "raster_images": 0,
+    "dimensions_match": true,
+    "fraction_different_pixels_144dpi": 0.0,
+    "bundled_validator_exit_code": 0
+  },
+  {
+    "file": "fig28_29_ooe_lattice_protein/fig_ooe_pf00018.pdf",
+    "reference": "fig_ooe_pf00018.pdf",
+    "single_page": true,
+    "text_characters": 651,
+    "raster_images": 0,
+    "dimensions_match": true,
+    "fraction_different_pixels_144dpi": 0.0,
+    "bundled_validator_exit_code": 1
+  }
+]

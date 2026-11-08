@@ -1,0 +1,267 @@
+{
+  "manuscript_revision": "896213107d6135f1aaae0211fbafd3ca3f23d7ff",
+  "manuscript_pages": 76,
+  "figures": [
+    {
+      "number": 1,
+      "page": 5,
+      "label": "fig:k1-phase",
+      "file": "fig2_K=1-phase-diagram-wide.pdf",
+      "sha256": "1fe68107862f12da94251494ec0952a34df81926c83d406afa06760564347287",
+      "directory": "fig01_K1_phase_diagram_wide",
+      "section": "2"
+    },
+    {
+      "number": 2,
+      "page": 6,
+      "label": "fig:dynamics",
+      "file": "fig_dynamics_combined.pdf",
+      "sha256": "c00bd5b72571965d862ab4f3ac3cba8593c17da64ee1ea7a911cc50369900514",
+      "directory": "fig02_dynamics_combined",
+      "section": "2"
+    },
+    {
+      "number": 3,
+      "page": 7,
+      "label": "fig:tt-pmo",
+      "file": "fig_temperature_tuning_pmo.pdf",
+      "sha256": "077472c983c54034f008be97163c22eb43b1bf025f0b6c3cb3ff0853665da3e1",
+      "directory": "fig03_temperature_tuning_pmo",
+      "section": "3"
+    },
+    {
+      "number": 4,
+      "page": 8,
+      "label": "fig:double-descent",
+      "file": "fig_double_descent.pdf",
+      "sha256": "e1e42c35b55dce5850fc5d329aff48fc00a8e7a01b695de5a61bc5b48a72a7d5",
+      "directory": "fig04_double_descent",
+      "section": "3"
+    },
+    {
+      "number": 5,
+      "page": 8,
+      "label": "fig:warm-cold-pp",
+      "file": "phase_diagram_gamma_omega.pdf",
+      "sha256": "9a0a6c63cdf5cce6c000b17333bd5d847b59155ace3e7dc8b4070e1424cf068b",
+      "directory": "fig05_13_phase_diagram_gamma_omega",
+      "section": "3"
+    },
+    {
+      "number": 6,
+      "page": 9,
+      "label": "fig:ooe-wrap",
+      "file": "fig_ooe_wrap.pdf",
+      "sha256": "694880f84aa1bae71005d5c3c9910cfb3f6d04c435c8d0653f5024bc32644d22",
+      "directory": "fig06_ooe_wrap",
+      "section": "3"
+    },
+    {
+      "number": 7,
+      "page": 22,
+      "label": "fig:phase-diagram-k=2-appendix",
+      "file": "fig_phase_diagram_k=2_appendix.pdf",
+      "sha256": "bc4629e36163db404318b81d14ad868a0be2991d14f0c1f94062b3497f4c740d",
+      "directory": "fig07_phase_diagram_k2_appendix",
+      "section": "A"
+    },
+    {
+      "number": 8,
+      "page": 23,
+      "label": "fig:finite-N-equilibrium",
+      "file": "equilibrium_comparison.pdf",
+      "sha256": "dc3dc640e23f324caa4ff645c7b49a6ad80b2cffe4609586f92a6a44c5f140ab",
+      "directory": "experiments/equilibrium",
+      "section": "A"
+    },
+    {
+      "number": 9,
+      "page": 30,
+      "label": "fig:msr-langevin-validation",
+      "file": "fig_msr_langevin_validation.pdf",
+      "sha256": "c7c21b6efc7f5140aeeb24a667cae5d2f109c5b1df0c3794eacf4c2cb25d0039",
+      "directory": "fig09_msr_langevin_validation",
+      "section": "B"
+    },
+    {
+      "number": 10,
+      "page": 32,
+      "label": "fig:finite-eta-phase-diagrams",
+      "file": "fig_finite_eta_phase_diagrams.pdf",
+      "sha256": "062e2e3148a34b88cbf95f7b35688079ffa89d334d6aada0b872318545d1f634",
+      "directory": "fig10_finite_eta_phase_diagrams",
+      "section": "B"
+    },
+    {
+      "number": 11,
+      "page": 35,
+      "label": "fig:ising-dmft-largeK",
+      "file": "fig_large_K_dmft_ising.pdf",
+      "sha256": "a3b02a0663297adddb29c13071bca60a517eb2c6e6d2bf9c0f1ac2e59af3974e",
+      "directory": "fig11_large_K_dmft_ising",
+      "section": "C"
+    },
+    {
+      "number": 12,
+      "page": 37,
+      "label": "fig:largeK_nu_sweep",
+      "file": "fig_invariant_dmft_large_K_validation.pdf",
+      "sha256": "d75adf9162b22541bc2f62b196dc0d7da9197cacd7295ea925eaab68570feedb",
+      "directory": "fig12_invariant_dmft_large_K_validation",
+      "section": "C"
+    },
+    {
+      "number": 13,
+      "page": 49,
+      "label": "fig:warm-cold-pp-fwd",
+      "file": "fig_fwd_pp_kl_phase_diagram.pdf",
+      "sha256": "a5d6568cca4d531f3c443024947543aedde08bb304268cbd0b2bc7dce314538a",
+      "directory": "fig05_13_phase_diagram_gamma_omega",
+      "section": "D"
+    },
+    {
+      "number": 14,
+      "page": 50,
+      "label": "fig:sbm-vs-gaussian",
+      "file": "fig_sbm_vs_gaussian.pdf",
+      "sha256": "3a2c961703070e0626e9785a5ca72d8643a3f720eb208fc37e0682843cd89881",
+      "directory": "fig14_sbm_vs_gaussian",
+      "section": "E"
+    },
+    {
+      "number": 15,
+      "page": 55,
+      "label": "fig:binar-bm-posterior-tempering",
+      "file": "posterior_tempering_binary_bm.pdf",
+      "sha256": "6816142b2943cdff7ecbb6f58d123cf4f1335d9c4c2ff09586b2affa71299d69",
+      "directory": "experiments/small_bm",
+      "section": "G.1"
+    },
+    {
+      "number": 16,
+      "page": 56,
+      "label": "fig:small-bm-double-descent",
+      "file": "small-bm-double-descent.pdf",
+      "sha256": "f0c2016ec7618f0a897efb33d731449ccf0b77d17b34fab093f73bf041e8af73",
+      "directory": "experiments/small_bm",
+      "section": "G.1"
+    },
+    {
+      "number": 17,
+      "page": 57,
+      "label": "fig:tt",
+      "file": "generative_temperature_tuning_binary_bm.pdf",
+      "sha256": "661bf8ba872e2c5e2ac176e5294efd99a2bc8d5311b4d009e0decf9c4afb6331",
+      "directory": "experiments/small_bm",
+      "section": "G.1"
+    },
+    {
+      "number": 18,
+      "page": 58,
+      "label": "fig:ooe",
+      "file": "out_of_eq_binary_bm.pdf",
+      "sha256": "6b3f1a47922050ffa7ab23fb5121b722497359abc332c033fd95992873f0731c",
+      "directory": "experiments/small_bm",
+      "section": "G.1"
+    },
+    {
+      "number": 19,
+      "page": 60,
+      "label": "fig:small-rbm-eta",
+      "file": "small_rbm_eta.pdf",
+      "sha256": "fbe1aed1456a580c407f3e41a1d33a8bf98e3c50727f3ffb1e44816492da0186",
+      "directory": "experiments/small_rbm",
+      "section": "G.2"
+    },
+    {
+      "number": 20,
+      "page": 61,
+      "label": "fig:small-rbm-gamma",
+      "file": "small_rbm_gamma.pdf",
+      "sha256": "d4b0aae323f82e9dbe58de0ab2b9d8a3734e8433d57061ff217ebbb9b06738ab",
+      "directory": "experiments/small_rbm",
+      "section": "G.2"
+    },
+    {
+      "number": 21,
+      "page": 62,
+      "label": "fig:small-rbm-beta",
+      "file": "small_rbm_beta.pdf",
+      "sha256": "4ca9c52b38c15c29c3a945c95e3ce4065d7e1b14147c667947702326b0227564",
+      "directory": "experiments/small_rbm",
+      "section": "G.2"
+    },
+    {
+      "number": 22,
+      "page": 63,
+      "label": "fig:small-rbm-nu",
+      "file": "small_rbm_nu.pdf",
+      "sha256": "3065ff33f40c76806af86943a0e6cd8ab69d4070f5ba5fc26c41909ea592ef25",
+      "directory": "experiments/small_rbm",
+      "section": "G.2"
+    },
+    {
+      "number": 23,
+      "page": 65,
+      "label": "fig:temperature-tuning",
+      "file": "fig_temperature_tuning_PF00072.pdf",
+      "sha256": "340af9feee02cd219ac82295530905b6baf59739f4638b79d32032714287e3e9",
+      "directory": "fig23_24_temperature_tuning",
+      "section": "G.3"
+    },
+    {
+      "number": 24,
+      "page": 66,
+      "label": "fig:temperature-tuning-pf00018",
+      "file": "fig_temperature_tuning_PF00018.pdf",
+      "sha256": "d87d840893ed038a37019d3832dc1c8dd78a5c318e94d78e5efb26cc9a0355b5",
+      "directory": "fig23_24_temperature_tuning",
+      "section": "G.3"
+    },
+    {
+      "number": 25,
+      "page": 67,
+      "label": "fig:fvsbn-K-dd",
+      "file": "fig_fvsbn_K_dd.pdf",
+      "sha256": "567248530aa91e093c277de5d35ad57abc027ae2355df673f867a6885a973de7",
+      "directory": "fig25_fvsbn_K_dd",
+      "section": "G.4"
+    },
+    {
+      "number": 26,
+      "page": 69,
+      "label": "fig:rbm-finance",
+      "file": "fig_rbm_finance_double_descent.pdf",
+      "sha256": "cd932ab810c4a6ff2a85e2d31dbb20bb94082a07a5bf840890cb76e4c83c80ee",
+      "directory": "fig26_rbm_finance_double_descent",
+      "section": "G.4"
+    },
+    {
+      "number": 27,
+      "page": 70,
+      "label": "fig:bayesgan-unimodal",
+      "file": "fig_bayesgan_unimodal.pdf",
+      "sha256": "d6434aec2eceb5f7fe52177aec7c4dae0345ff246a41372a30ccffec8d586e7d",
+      "directory": "fig27_bayesgan_unimodal",
+      "section": "G.5"
+    },
+    {
+      "number": 28,
+      "page": 71,
+      "label": "fig:ooe-potts",
+      "file": "fig_ooe_potts.pdf",
+      "sha256": "5c71230b56c280f13b1408dab484f847f38ab736233bdd1e33f4a59732c0ffc4",
+      "directory": "fig28_29_ooe_lattice_protein",
+      "section": "G.6"
+    },
+    {
+      "number": 29,
+      "page": 72,
+      "label": "fig:ooe-pf00018",
+      "file": "fig_ooe_pf00018.pdf",
+      "sha256": "b8fdafd22ef8edd070cf64b954a726c82b3204dce9d146c5dcc2e31c93d46896",
+      "directory": "fig28_29_ooe_lattice_protein",
+      "section": "G.6"
+    }
+  ]
+}

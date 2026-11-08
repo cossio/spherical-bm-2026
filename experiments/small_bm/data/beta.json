@@ -1,0 +1,47 @@
+{
+  "experiment": "generation_temperature",
+  "N": 8,
+  "K": 4,
+  "omega": 1.5,
+  "gamma": 6.0,
+  "datasets": 200,
+  "seed_base": 1000,
+  "dataset_rng": "numpy.default_rng(seed_base + dataset_index)",
+  "objective": "K logZ - sum_data pair_products dot j + N gamma ||j||\u00b2/2",
+  "assumptions": [
+    "MAP fit to independent upper-triangle couplings",
+    "main-paper Gaussian prior normalization transfers to BM",
+    "fixed balanced gauge (four plus, four minus) applied to student only",
+    "independent reproducible dataset seeds"
+  ],
+  "metric_axis": [
+    "forward_kl",
+    "reverse_kl",
+    "mode_variance_per_N",
+    "covariance_gap_per_N"
+  ],
+  "metrics_shape": "[dataset,beta,control,metric]",
+  "controls": [
+    "trained",
+    "misaligned"
+  ],
+  "kl_units": "total nats",
+  "ci": "pointwise 99% Student-t across iid datasets",
+  "continuous_mean_kl_beta_optima": {
+    "forward": 3.5419750096671847,
+    "reverse": 3.340119043938135
+  },
+  "grid_mean_kl_beta_optima": {
+    "forward": 3.5697628360021327,
+    "reverse": 3.369823670231396
+  },
+  "max_map_gradient_residual": 2.4658662933774167e-07,
+  "max_gauge_spectrum_error": 3.885780586188048e-16,
+  "mean_teacher_alignment_squared": [
+    0.8620067828096453,
+    0.01536396432861583
+  ],
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "python": "3.14.6"
+}

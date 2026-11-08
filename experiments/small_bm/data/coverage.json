@@ -1,0 +1,236 @@
+{
+  "posterior": {
+    "retained": {
+      "predictive": {
+        "shape": [
+          2,
+          13,
+          100,
+          256
+        ],
+        "dtype": "float64"
+      },
+      "metrics": {
+        "shape": [
+          2,
+          13,
+          100,
+          6
+        ],
+        "dtype": "float64"
+      },
+      "rank_split_rhat": {
+        "shape": [
+          2,
+          13,
+          100,
+          30
+        ],
+        "dtype": "float64"
+      },
+      "bulk_ess": {
+        "shape": [
+          2,
+          13,
+          100,
+          30
+        ],
+        "dtype": "float64"
+      },
+      "acceptance": {
+        "shape": [
+          2,
+          13,
+          100,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "divergences": {
+        "shape": [
+          2,
+          13,
+          100,
+          4
+        ],
+        "dtype": "int64"
+      },
+      "gammas": {
+        "shape": [
+          2
+        ],
+        "dtype": "float64"
+      },
+      "etas": {
+        "shape": [
+          13
+        ],
+        "dtype": "float64"
+      },
+      "dataset_indices": {
+        "shape": [
+          100,
+          4
+        ],
+        "dtype": "int64"
+      },
+      "metric_names": {
+        "shape": [
+          6
+        ],
+        "dtype": "<U16"
+      },
+      "teacher": {
+        "shape": [
+          256
+        ],
+        "dtype": "float64"
+      },
+      "states": {
+        "shape": [
+          256,
+          8
+        ],
+        "dtype": "int64"
+      },
+      "mean": {
+        "shape": [
+          2,
+          13,
+          6
+        ],
+        "dtype": "float64"
+      },
+      "ci99_halfwidth": {
+        "shape": [
+          2,
+          13,
+          6
+        ],
+        "dtype": "float64"
+      },
+      "draws_per_chain": {
+        "shape": [
+          2,
+          13
+        ],
+        "dtype": "int64"
+      }
+    },
+    "omitted": [
+      "chain_predictive",
+      "half_predictive",
+      "chain_metrics",
+      "half_metrics",
+      "step_size",
+      "shells"
+    ]
+  },
+  "dynamics": {
+    "retained": {
+      "checkpoints": {
+        "shape": [
+          121
+        ],
+        "dtype": "int64"
+      },
+      "single_site_updates": {
+        "shape": [
+          5
+        ],
+        "dtype": "int64"
+      },
+      "metrics": {
+        "shape": [
+          50,
+          3,
+          5,
+          121,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "dataset_metrics": {
+        "shape": [
+          50,
+          5,
+          121,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "mean": {
+        "shape": [
+          5,
+          121,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "ci95_halfwidth": {
+        "shape": [
+          5,
+          121,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "map_metrics": {
+        "shape": [
+          50,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "map_couplings": {
+        "shape": [
+          50,
+          12,
+          12
+        ],
+        "dtype": "float64"
+      },
+      "sample_indices": {
+        "shape": [
+          50,
+          48
+        ],
+        "dtype": "int64"
+      },
+      "datasets": {
+        "shape": [
+          50,
+          48,
+          12
+        ],
+        "dtype": "int8"
+      },
+      "empirical_covariances": {
+        "shape": [
+          50,
+          12,
+          12
+        ],
+        "dtype": "float64"
+      },
+      "seeds": {
+        "shape": [
+          50,
+          3
+        ],
+        "dtype": "int64"
+      },
+      "teacher_logp": {
+        "shape": [
+          4096
+        ],
+        "dtype": "float64"
+      }
+    },
+    "omitted": [
+      "couplings",
+      "iid_map_start_couplings",
+      "iid_map_start_metrics"
+    ]
+  }
+}

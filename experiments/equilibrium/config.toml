@@ -1,0 +1,61 @@
+schema_version = 1
+manuscript_revision = "f1c68261fda7c1e679de69d2f5c30b74a3ff9b66"
+sizes = [32, 64, 128]
+chains = 4
+warmup = 10000
+draws = 40000
+thin = 5
+measurement_spins = 16
+seed_base = 61106000
+
+[[cases]]
+name = "pm_outlier"
+gamma = 1.5
+eta = 4.0
+c = [1.25, 0.75]
+[[cases]]
+name = "condensation_boundary"
+gamma = 1.25
+eta = 4.0
+c = [1.25, 0.75]
+[[cases]]
+name = "one_condensed"
+gamma = 0.7
+eta = 4.0
+c = [1.25, 0.75]
+[[cases]]
+name = "coalescence_boundary"
+gamma = 0.5625
+eta = 4.0
+c = [1.25, 0.75]
+[[cases]]
+name = "two_condensed"
+gamma = 0.4
+eta = 4.0
+c = [1.25, 0.75]
+[[cases]]
+name = "deep_coalesced"
+gamma = 0.25
+eta = 4.0
+c = [1.25, 0.75]
+[[cases]]
+name = "pm_bulk"
+gamma = 3.0
+eta = 0.5
+c = [1.25, 0.75]
+[[cases]]
+name = "edge_coalesced"
+gamma = 0.15
+eta = 0.5
+c = [1.25, 0.75]
+
+[[controls]]
+name = "exact_n2"
+gamma = 0.25
+eta = 4.0
+c = [1.25, 0.75]
+[[controls]]
+name = "goe_k1"
+gamma = 0.7
+eta = 1.0
+c = [1.0]

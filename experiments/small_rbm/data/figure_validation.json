@@ -1,0 +1,90 @@
+{
+  "eta": {
+    "bundled_exit": 0,
+    "bundled_output": "PASS: No layout issues detected.\n",
+    "coordinate_corrected_exit": 0,
+    "raster_components": 0,
+    "render_shape": [
+      404,
+      792,
+      3
+    ],
+    "different_channel_values": 0,
+    "maximum_channel_difference": 0,
+    "mean_channel_difference": 0.0,
+    "coordinate_check": {
+      "passed": true,
+      "extractable_labels": 39,
+      "line_endpoints_normalized": 153,
+      "issues": [],
+      "checks": "all installed checks with unchanged default tolerances"
+    },
+    "coordinate_note": "Normalize PDF line endpoints to the text coordinate system; all installed checks and default tolerances retained."
+  },
+  "gamma": {
+    "bundled_exit": 1,
+    "bundled_output": "FAIL: 2 issue(s) found:\n\n[\n  {\n    \"type\": \"text_line_overlap\",\n    \"text\": \"A)\",\n    \"text_center\": [\n      50.4,\n      18.0\n    ],\n    \"distance_pt\": 1.7\n  },\n  {\n    \"type\": \"text_line_overlap\",\n    \"text\": \"B)\",\n    \"text_center\": [\n      252.5,\n      18.0\n    ],\n    \"distance_pt\": 0.4\n  }\n]\n",
+    "coordinate_corrected_exit": 0,
+    "raster_components": 0,
+    "render_shape": [
+      468,
+      792,
+      3
+    ],
+    "different_channel_values": 0,
+    "maximum_channel_difference": 0,
+    "mean_channel_difference": 0.0,
+    "coordinate_check": {
+      "passed": true,
+      "extractable_labels": 47,
+      "line_endpoints_normalized": 111,
+      "issues": [],
+      "checks": "all installed checks with unchanged default tolerances"
+    },
+    "coordinate_note": "Normalize PDF line endpoints to the text coordinate system; all installed checks and default tolerances retained."
+  },
+  "beta": {
+    "bundled_exit": 1,
+    "bundled_output": "FAIL: 1 issue(s) found:\n\n[\n  {\n    \"type\": \"text_line_overlap\",\n    \"text\": \"0.1\",\n    \"text_center\": [\n      43.6,\n      271.0\n    ],\n    \"distance_pt\": 0.2\n  }\n]\n",
+    "coordinate_corrected_exit": 0,
+    "raster_components": 0,
+    "render_shape": [
+      677,
+      792,
+      3
+    ],
+    "different_channel_values": 0,
+    "maximum_channel_difference": 0,
+    "mean_channel_difference": 0.0,
+    "coordinate_check": {
+      "passed": true,
+      "extractable_labels": 78,
+      "line_endpoints_normalized": 82,
+      "issues": [],
+      "checks": "all installed checks with unchanged default tolerances"
+    },
+    "coordinate_note": "Normalize PDF line endpoints to the text coordinate system; all installed checks and default tolerances retained."
+  },
+  "nu": {
+    "bundled_exit": 0,
+    "bundled_output": "PASS: No layout issues detected.\n",
+    "coordinate_corrected_exit": 0,
+    "raster_components": 0,
+    "render_shape": [
+      677,
+      792,
+      3
+    ],
+    "different_channel_values": 0,
+    "maximum_channel_difference": 0,
+    "mean_channel_difference": 0.0,
+    "coordinate_check": {
+      "passed": true,
+      "extractable_labels": 76,
+      "line_endpoints_normalized": 43,
+      "issues": [],
+      "checks": "all installed checks with unchanged default tolerances"
+    },
+    "coordinate_note": "Normalize PDF line endpoints to the text coordinate system; all installed checks and default tolerances retained."
+  }
+}

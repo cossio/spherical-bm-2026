@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "selected_map_fits_recomputed": 560,
+  "maximum_map_reverse_kl_error": 0.0,
+  "independent_beta_cells": 64,
+  "nu_replica_aggregates": 20,
+  "hmc_tests": 6,
+  "map_objective_gradient_hessian_checks": 9,
+  "gibbs_and_refresh_kernel_tests": "passed",
+  "eta_sampling_failure_count": 0,
+  "eta_predictive_precision_flag_count": 48,
+  "candidate_archive_audit": "not rerun; unselected candidate outputs excluded"
+}

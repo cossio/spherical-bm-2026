@@ -1,0 +1,12 @@
+**/__pycache__/
+results/reproduction*/
+results/controls_reproduction/
+results/replication_reproduction/
+validation/reproduction*/
+validation/controls_reproduction/
+validation/replication_reproduction*/
+figures/reproduced/
+validation/reproduction_report.md
+results/reproduction_n2_reference.json
+results/n256_reproduction/
+validation/n256_reproduction/

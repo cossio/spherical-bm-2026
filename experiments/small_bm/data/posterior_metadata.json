@@ -1,0 +1,143 @@
+{
+  "configuration": {
+    "out": "2026-11-03-small-bm-appendix/results/posterior",
+    "datasets": 100,
+    "draws": "cell-dependent; see cell_configuration",
+    "warmup": 1000,
+    "chains": 4,
+    "workers": 4,
+    "gammas": [
+      0.1,
+      1.5
+    ],
+    "etas": [
+      0.05,
+      0.075,
+      0.1,
+      0.15,
+      0.25,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      1.5,
+      3.0,
+      7.0,
+      20.0
+    ],
+    "seed": 20261103,
+    "data_seed": 1000,
+    "leapfrog_min": 5,
+    "leapfrog_max": 10,
+    "save_traces": false,
+    "resume": false,
+    "validate_only": false
+  },
+  "N": 8,
+  "K": 4,
+  "omega": 1.5,
+  "objective": "U=K log Z - sum_data f(s).j + N gamma/2 * ||j||²; pi_eta proportional exp(-eta U)",
+  "sampler": "Metropolis-adjusted HMC; fixed MAP-Hessian whitening; randomized trajectory length and step jitter; adaptation only in warmup",
+  "diagnostics_observables": [
+    "whitened_coupling_0",
+    "whitened_coupling_1",
+    "whitened_coupling_2",
+    "whitened_coupling_3",
+    "whitened_coupling_4",
+    "whitened_coupling_5",
+    "whitened_coupling_6",
+    "whitened_coupling_7",
+    "whitened_coupling_8",
+    "whitened_coupling_9",
+    "whitened_coupling_10",
+    "whitened_coupling_11",
+    "whitened_coupling_12",
+    "whitened_coupling_13",
+    "whitened_coupling_14",
+    "whitened_coupling_15",
+    "whitened_coupling_16",
+    "whitened_coupling_17",
+    "whitened_coupling_18",
+    "whitened_coupling_19",
+    "whitened_coupling_20",
+    "whitened_coupling_21",
+    "whitened_coupling_22",
+    "whitened_coupling_23",
+    "whitened_coupling_24",
+    "whitened_coupling_25",
+    "whitened_coupling_26",
+    "whitened_coupling_27",
+    "eta_U",
+    "conditional_mean_M"
+  ],
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "dataset_indices_sha256": "c2ae2f6359aefe22c50bb9100f59880930bdea0bdf0ce35635b8c0b5c2e2a19e",
+  "summary": {
+    "max_rank_split_rhat": 1.0042361608878345,
+    "min_bulk_ess": 2329.9384358667558,
+    "rhat_p99": 1.0019612913462155,
+    "dataset_cells_rhat_above_1_05": 0,
+    "dataset_cells_ess_below_100": 0,
+    "divergences": 0,
+    "max_half_draw_mean_KL_difference": 0.0033816599761362916,
+    "max_half_draw_dataset_KL_difference": 0.17098989192914194,
+    "grid_minimum_eta": {
+      "0.1": {
+        "forward": 0.1,
+        "reverse": 0.05
+      },
+      "1.5": {
+        "forward": 20.0,
+        "reverse": 20.0
+      }
+    },
+    "dataset_ci": "Two-sided 99% Student-t interval over independent datasets; posterior draws averaged within dataset",
+    "diagnostic_gate": "max rank/folded split-Rhat <= 1.05; min bulk ESS >= 100; zero divergences; inspect predictive half-draw stability"
+  },
+  "refinement": {
+    "reason": "Initial estimated predictive KL plug-in bias was comparable to adjacent weak-regularization grid minima",
+    "initial_draws_per_chain": 4000,
+    "refined_cells": [
+      {
+        "gamma": 0.1,
+        "eta": 0.05,
+        "draws_per_chain": 16000,
+        "mean_KL_change_from_initial": [
+          -0.0035380017329234904,
+          -0.003380281929072364
+        ]
+      },
+      {
+        "gamma": 0.1,
+        "eta": 0.075,
+        "draws_per_chain": 16000,
+        "mean_KL_change_from_initial": [
+          -0.0025153553970458896,
+          -0.0036189777808360215
+        ]
+      },
+      {
+        "gamma": 0.1,
+        "eta": 0.1,
+        "draws_per_chain": 16000,
+        "mean_KL_change_from_initial": [
+          -0.002926553497561351,
+          -0.0031515087002891968
+        ]
+      },
+      {
+        "gamma": 0.1,
+        "eta": 0.15,
+        "draws_per_chain": 16000,
+        "mean_KL_change_from_initial": [
+          -0.0032483537413387394,
+          -0.0027119234713624653
+        ]
+      }
+    ],
+    "nested_draws": "Same seed and warmup; longer trajectories extend the original trajectories",
+    "merge_script_sha256": "66c12e2bd321101c84159363c1c2a30009412b0ffed65de77aeb249bd33c620d",
+    "initial_results_archive": "initial-4000"
+  }
+}

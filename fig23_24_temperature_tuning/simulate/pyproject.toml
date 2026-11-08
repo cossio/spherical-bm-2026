@@ -1,0 +1,15 @@
+[project]
+name = "temperature-tuning"
+version = "0.1.0"
+description = "Potts-model temperature-tuning training utilities"
+requires-python = ">=3.14"
+dependencies = [
+    "adabmdca>=0.7.5",
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "nbconvert>=7.17.0",
+    "nbformat>=5.10.4",
+    "numpy>=2.4.3",
+    "scipy>=1.17.1",
+]

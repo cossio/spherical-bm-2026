@@ -1,0 +1,5 @@
+case	n	chain	warmup	draws	thin	out	seed
+deep_coalesced	128	1	50000	600000	20	results/independent_replication	91718801
+deep_coalesced	128	2	50000	600000	20	results/independent_replication	91718802
+deep_coalesced	128	3	50000	600000	20	results/independent_replication	91718803
+deep_coalesced	128	4	50000	600000	20	results/independent_replication	91718804

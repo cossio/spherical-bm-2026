@@ -1,0 +1,23 @@
+{
+  "data/beta.json": "d533ad69348b8c3d051d6451d091b7b325b03e5e5fc70e6abd0bbb0ec94af02a",
+  "data/beta.npz": "b19892de7c2a6fa75efc351db3d65a54e48b3c246e209228fe073ba57937fa09",
+  "data/bm_map_summary.json": "2bf136926c4b1b2eac31afc5f00e7e96a9fd9393dedf381ad53d2f75622dc167",
+  "data/bm_map_sweep.npz": "2bc9a886e55b939c912d0241013a6b522f2407e03f64403e0a27b9a6cea6f6cb",
+  "data/coverage.json": "61b2f63691d8e15767f67d6ea66fbab9c07f89ca76bbe4f6169e2a39874e4367",
+  "data/curve.json": "f7bca85651a531de6272678ddc1a1afd5223e0b1f8b68ff8a98b8146ff932329",
+  "data/dynamics.npz": "95b83ccaacf111ec87d2cba094b40b5b7f234ab1d4bbbd13052f942c34a44386",
+  "data/dynamics_metadata.json": "3a9ec14067519ad79c2d0db6fd1a4746a33088b29114596a2b6b7a58eaf4fe76",
+  "data/gamma/gamma_summary.json": "ca15ee003a369fb3f9589bb4682908f375d3b72ca767ca5ab1a12e463ad8908e",
+  "data/gamma/grid.npz": "8d5e0f7dfd23c5d0df2c360f021c3ed3be51a9185ef0a060893c9c44131f0ed9",
+  "data/gamma_cold_hmc/gamma_cold_hmc_summary.json": "b24409fb366bf2dc5172121f13861de78c0182001e73388ebc2c2f7108149805",
+  "data/gamma_cold_laplace/gamma_cold_summary.json": "28a50b911b032a8734aa122c6b28591281d55760f218a9749eb79b96956552c2",
+  "data/gamma_cold_orbit/gamma_summary.json": "b90cb11b74d48d157b13ab98575eac5b5810907cd3ebc2e231c1451cd12527c2",
+  "data/gamma_final.json": "c9296fe69acd1b9bcee0cbc5641af9d8c0ddd6ba7c90412700e42d01e49ea588",
+  "data/gamma_final.npz": "87143a02ab19e81054b0956637f2994461fc4ca0c87c8bb5ffaf0c5b74503c08",
+  "data/posterior.npz": "66f17ff076ccf5e68dfa8b96b0b895d74b64e4dd8425f45d14ee28ec98534725",
+  "data/posterior_metadata.json": "ff8d7a7609276f89248a0df7bc538b41152dae0f2392b4220917407151886a29",
+  "figures/generation_temperature.pdf": "661bf8ba872e2c5e2ac176e5294efd99a2bc8d5311b4d009e0decf9c4afb6331",
+  "figures/persistent_training.pdf": "6b3f1a47922050ffa7ab23fb5121b722497359abc332c033fd95992873f0731c",
+  "figures/posterior_tempering.pdf": "6816142b2943cdff7ecbb6f58d123cf4f1335d9c4c2ff09586b2affa71299d69",
+  "figures/regularization_double_descent.pdf": "f0c2016ec7618f0a897efb33d731449ccf0b77d17b34fab093f73bf041e8af73"
+}

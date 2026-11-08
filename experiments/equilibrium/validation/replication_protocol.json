@@ -1,0 +1,47 @@
+{
+  "recorded_utc": "2026-11-06T19:50:36.664364+00:00",
+  "reason": "Descriptive late-quarter diagnostics in deep-coalesced N128 W22 exposed a slow mode despite passing full-run gates",
+  "rules": {
+    "case": "deep_coalesced",
+    "N": 128,
+    "chains": 4,
+    "warmup": 50000,
+    "retained_period_transitions": 600000,
+    "thin": 20,
+    "seeds": [
+      91718801,
+      91718802,
+      91718803,
+      91718804
+    ],
+    "comparison_names": [
+      "gap12",
+      "h_top2",
+      "lambda1",
+      "lambda2",
+      "projector_c1",
+      "projector_c2",
+      "score_residual_c1",
+      "score_residual_c2",
+      "second_moment",
+      "w11",
+      "w22"
+    ],
+    "comparison_count": 11,
+    "difference_mcse": "sqrt(original_mcse^2 + replication_mcse^2)",
+    "difference_abs_z_limit": 2.8375969129437872,
+    "familywise_alpha": 0.05,
+    "rhat_limit": 1.01,
+    "ess_bulk_min": 400,
+    "ess_tail_min": 400,
+    "cohort_score_abs_z_limit": 4,
+    "pooled_diagnostics_are_descriptive": true,
+    "maximum_replication_cohorts": 1,
+    "primary_estimates": "Original complete 24-group production grid, unchanged",
+    "quarter_and_half_diagnostics": "Descriptive; inspect coherent drift without using them to discard draws"
+  },
+  "manifest_sha256": "2c6d2bc5c6797fbebadba99876bc56174ed7da2f5f96ca53bf294b1760d7a14e",
+  "original_summary_sha256": "a4f9d06cf7fda25d1765e96477ddcaf7a33955ce8c01a35c405ad843225357a3",
+  "comparison_source_sha256": "d879f4848502054e021e895712451b7e7a6b3cbadbafe82eee9478df994d79a2",
+  "analysis_source_sha256": "bcd3812e3ef7da2697eb30873aa0e030d7c712b598af7ea7d1abf26829e8fb87"
+}

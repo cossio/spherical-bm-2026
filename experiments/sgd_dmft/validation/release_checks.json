@@ -1,0 +1,76 @@
+{
+  "saved_data": {
+    "complete": true,
+    "run_count": 24,
+    "missing": [],
+    "protocol_and_array_checks_passed": true,
+    "analyzer_summary_fields_compared": 288,
+    "analyzer_summary_max_absolute_difference": 3.469446951953614e-18
+  },
+  "likelihood_gradient_absolute_error": 1.049674236419662e-11,
+  "update_oracle": {
+    "passed": true,
+    "source_sha256": "395143aa453763a0bbe71e7fb4d5a7786e04db55377ec3f5b251545842137ed2",
+    "torch": "2.11.0+cu130",
+    "maximum_errors": {
+      "A": {
+        "s": 1.6653345369377348e-16,
+        "kappa": 2.7755575615628914e-17,
+        "trace": 2.0816681711721685e-17,
+        "norm_squared_over_N": 5.551115123125783e-16,
+        "weight_signal_block": 1.0408340855860843e-17,
+        "counts": 0.0
+      },
+      "B": {
+        "s": 1.1102230246251565e-16,
+        "kappa": 2.7755575615628914e-17,
+        "trace": 2.225324959026498e-17,
+        "norm_squared_over_N": 5.551115123125783e-16,
+        "weight_signal_block": 6.938893903907228e-18,
+        "counts": 0.0
+      },
+      "C": {
+        "s": 1.1102230246251565e-16,
+        "kappa": 0.0,
+        "trace": 5.7462715141731735e-18,
+        "norm_squared_over_N": 5.551115123125783e-16,
+        "weight_signal_block": 3.469446951953614e-18,
+        "counts": 0.0
+      },
+      "D": {
+        "s": 5.551115123125783e-17,
+        "kappa": 2.7755575615628914e-17,
+        "trace": 8.023096076392733e-18,
+        "norm_squared_over_N": 5.551115123125783e-16,
+        "weight_signal_block": 3.469446951953614e-18,
+        "counts": 0.0
+      }
+    }
+  },
+  "julia_kernel": {
+    "passed": true,
+    "julia_version": "julia version 1.12.7",
+    "cases": {
+      "A": {
+        "original_loop_max_error": 0.0,
+        "saved_prefix_max_error": 0.0
+      },
+      "B": {
+        "original_loop_max_error": 0.0,
+        "saved_prefix_max_error": 0.0
+      },
+      "C": {
+        "original_loop_max_error": 0.0,
+        "saved_prefix_max_error": 0.0
+      },
+      "D": {
+        "original_loop_max_error": 0.0,
+        "saved_prefix_max_error": 0.0
+      }
+    },
+    "comparison_horizon": 2,
+    "step": 0.05,
+    "endpoint": "Final shortened-run kappa excluded only from full-run prefix comparison."
+  },
+  "production_rerun": false
+}

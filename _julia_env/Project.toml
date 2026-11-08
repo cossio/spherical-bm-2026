@@ -1,0 +1,22 @@
+# Shared Julia environment for every Julia figure / simulation script in
+# accompanying-code. Activate with `Pkg.activate(joinpath(@__DIR__, "..",
+# "_julia_env"))` (or run the bundled `setup.jl` once); each figure script
+# already contains the activation prologue.
+#
+# The local slim copy of UndersampledSphericalBMs2025 (under ../_lib/) is
+# wired in via `Pkg.develop` in `setup.jl` rather than as a registry dep,
+# so no Manifest.toml is shipped — first-run `Pkg.instantiate()` resolves
+# everything from this Project.toml.
+
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Roots = "f2b01f46-fcfa-551c-844a-d8ac1e96c665"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+UndersampledSphericalBMs2025 = "7ca43d7c-19f1-405d-92f5-282d71e47f52"

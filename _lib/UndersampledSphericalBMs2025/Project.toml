@@ -1,0 +1,6 @@
+name = "UndersampledSphericalBMs2025"
+uuid = "7ca43d7c-19f1-405d-92f5-282d71e47f52"
+version = "0.1.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"

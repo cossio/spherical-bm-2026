@@ -1,0 +1,41 @@
+{
+  "case": "A",
+  "N": 4000,
+  "replicas": 8,
+  "dt": 0.005,
+  "Tmax": 30.0,
+  "save_dt": 0.1,
+  "nu": 0.3,
+  "seed": 20261107,
+  "device": "cuda",
+  "threads": 1,
+  "output": "results/case_A_N4000_dt0p005.npz",
+  "selftest": false,
+  "c": [
+    1.5,
+    0.5
+  ],
+  "s0": [
+    0.3,
+    0.25
+  ],
+  "gamma": 0.5,
+  "K": 2,
+  "eta": "infinity",
+  "beta": 1.0,
+  "modes": [
+    "data_minibatch_SGD",
+    "full_data_PCD_control"
+  ],
+  "parameter_noise": "none",
+  "W_initial": "zero",
+  "sampler": "projected Euler with sphere retraction; old W and x",
+  "weight_update": "explicit Euler ascent on logposterior/N",
+  "replicate_rng": "independent draws within batched pseudorandom stream; shared across paired controls",
+  "elapsed_s": 86.81321862898767,
+  "torch": "2.7.0",
+  "device_name": "Tesla V100-SXM2-32GB",
+  "source_sha256": "395143aa453763a0bbe71e7fb4d5a7786e04db55377ec3f5b251545842137ed2",
+  "max_norm_error": 6.661338147750939e-16,
+  "max_trace_error": 9.14823772291129e-14
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "n256_raw_chains_reanalyzed": 24,
+  "n256_groups_passing": 6,
+  "fresh_summary_statistics_equal_saved": true,
+  "original_draw_and_metadata_hashes_verified": true,
+  "exported_summary_sha256": "9c358fd15523610cf902124ce07672d09d0bf30d225948ccda94d2fd8850b976",
+  "original_summary_sha256": "162dcb199a828d1a501d91fc4971cc8ac5624007e84cf19fd925013a6c5cf81c",
+  "protocol_sha256": "a7eeeda7d493825d8f19c6c73f65d9559fa83272b6b4d2fa398f85a57568a61c",
+  "manifest_sha256": "4832c64a1ebc01271b3dca338a33b38a274d858192555deb46d3d0f24a018373",
+  "n256_matrix_rhat_max": 1.0026720513824883,
+  "n256_minimum_bulk_or_tail_ess": 2388.9446372525395,
+  "figure": {
+    "saved_points_verified": 72,
+    "original_54_points_unchanged": true,
+    "rendered_pixel_match_at_144dpi": true,
+    "manuscript_pdf_sha256": "dc3dc640e23f324caa4ff645c7b49a6ad80b2cffe4609586f92a6a44c5f140ab"
+  },
+  "scope": "N=256 raw chains reanalyzed for this update. Original cohorts were audited in the previous release; their unchanged source, data and results remain covered by that audit. No raw traces are bundled."
+}

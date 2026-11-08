@@ -1,0 +1,26 @@
+{
+  "pdf": "figures/reproduced/equilibrium_comparison.pdf",
+  "pdf_sha256": "38183ef9ac03fb2c2ac9101b3807605751b770d8143a414f951648f7a69a8012",
+  "validator_sha256": "79af7a62d492eb4e221cc93c60fd670a7156e27b4aa78263f00cecfaffe6a9a9",
+  "original_issues": [
+    {
+      "type": "text_line_overlap",
+      "text": "Outlier",
+      "text_center": [
+        77.3,
+        37.1
+      ],
+      "distance_pt": 0.8
+    }
+  ],
+  "coordinate_normalized_issues": [],
+  "status": "PASS",
+  "labels": 45,
+  "lines": 238,
+  "curves": 56,
+  "embedded_images": 0,
+  "thresholds": "unchanged upstream defaults; only line endpoint coordinate origin normalized",
+  "upstream_issue": "https://github.com/cossio/claude-skills/issues/109",
+  "rendered_pixel_match_to_manuscript_144dpi": true,
+  "visual_review": "Titles, full four-size legend, axis labels, curves, marker types and intervals inspected at 144dpi; no clipping or overlaps."
+}

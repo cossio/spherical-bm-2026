@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-11-06T19:53:07+00:00",
+  "reason": "Independent review found that the comparator recorded its source and manifest hashes without enforcing them. The implementation now checks these hashes and explicitly checks protocol case, N, and thinning. No statistical comparison rule or threshold changed.",
+  "decision_rules_changed": false,
+  "replication_data_inspected": false,
+  "original_protocol_sha256": "54a51932bc97555fa8dde460286fa0b78ee277ea6291aae86c5edffefc869951",
+  "original_comparison_source_sha256": "d879f4848502054e021e895712451b7e7a6b3cbadbafe82eee9478df994d79a2",
+  "updated_comparison_source_sha256": "a21e8c5efc702db5d8fc36b18c4bbbad052b9d0e7c582148d6ccf09457b85b79"
+}

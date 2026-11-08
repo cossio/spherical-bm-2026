@@ -1,0 +1,2 @@
+# Preserve the byte hashes of exported numerical tables, including CRLF CSVs.
+*.csv -text whitespace=cr-at-eol

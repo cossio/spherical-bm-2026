@@ -1,0 +1,66 @@
+{
+  "model": "finite_N_spherical_Boltzmann_machine",
+  "method": "independent_N2_radial_quadrature",
+  "parameters": {
+    "N": 2,
+    "K": 2,
+    "eta": 4.0,
+    "gamma": 0.25,
+    "c": [
+      1.25,
+      0.75
+    ]
+  },
+  "radial_density": "r*exp(-gamma*eta*r^2)*I0(eta*(c1-c2)*r)/I0(r)^(K*eta)",
+  "trace_shift": {
+    "mean": 0.0,
+    "variance": 0.5
+  },
+  "means": {
+    "lambda1": 0.6162556234342151,
+    "lambda2": -0.6162556234342151,
+    "gap12": 1.2325112468684303,
+    "radius_squared": 0.4832467330179906,
+    "w11": 0.35444621111946667,
+    "w22": -0.35444621111946667,
+    "w11_squared_traceless": 0.3060236274582572,
+    "w12_squared": 0.17722310555973336,
+    "alignment_top1_data1": 0.7413880464144073,
+    "alignment_top2_data2": 0.7413880464144073,
+    "alignment_subspace2_data1": 1.0,
+    "alignment_subspace2_data2": 1.0,
+    "condensation_top1": 0.6423191040331709,
+    "condensation_top2_sum": 1.0,
+    "predictive_data1": 0.5806942236100668,
+    "log_z_normalized_traceless": 0.11446368908873754
+  },
+  "quadrature_error_estimates": {
+    "lambda1": 1.5319233198942643e-12,
+    "lambda2": 1.5319233198942643e-12,
+    "gap12": 3.0638466397885286e-12,
+    "radius_squared": 1.347686305377654e-12,
+    "w11": 8.921213475213926e-13,
+    "w22": 8.921213475213926e-13,
+    "w11_squared_traceless": 9.242463955938784e-13,
+    "w12_squared": 4.4606393673905237e-13,
+    "alignment_top1_data1": 3.9298117254607905e-12,
+    "alignment_top2_data2": 3.9298117254607905e-12,
+    "alignment_subspace2_data1": 4.9414244444936504e-12,
+    "alignment_subspace2_data2": 4.9414244444936504e-12,
+    "condensation_top1": 4.049012083262033e-12,
+    "condensation_top2_sum": 4.9414244444936504e-12,
+    "predictive_data1": 1.4485138270773529e-12,
+    "log_z_normalized_traceless": 3.1343118837425457e-13
+  },
+  "checks": {
+    "posterior_score_residual_data1": -3.469446951953614e-16,
+    "K1_eta1_goe_radius_mean": 0.0,
+    "K1_eta1_goe_radius_second_moment": 0.0
+  },
+  "notes": [
+    "lambda1/2 include the independent trace shift in expectation; its mean is zero",
+    "w11_squared_traceless omits trace_shift.variance; add it for full-matrix W11^2",
+    "I0 is the modified Bessel function, with normalized spherical base measure",
+    "Quadrature estimates are numerical integration errors, not MCMC uncertainty"
+  ]
+}

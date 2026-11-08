@@ -1,0 +1,112 @@
+{
+  "pdf": "reproduced/phase_diagram_gamma_omega.pdf",
+  "pdf_sha256": "a373a807df2b63b8d9d36177096f4a6dd9d758c5881ca940dd971df23e5091ed",
+  "validator_sha256": "79af7a62d492eb4e221cc93c60fd670a7156e27b4aa78263f00cecfaffe6a9a9",
+  "original_issues": [
+    {
+      "type": "text_text_overlap",
+      "text_a": "DKL(Ppp‖P*)/N",
+      "bbox_a": [
+        8.3,
+        120.9,
+        17.1,
+        168.9
+      ],
+      "text_b": "B)",
+      "bbox_b": [
+        3.7,
+        115.4,
+        14.7,
+        124.4
+      ]
+    },
+    {
+      "type": "text_line_overlap",
+      "text": "1.0",
+      "text_center": [
+        35.1,
+        99.8
+      ],
+      "distance_pt": 0.0
+    },
+    {
+      "type": "text_line_overlap",
+      "text": "1.5",
+      "text_center": [
+        63.5,
+        99.8
+      ],
+      "distance_pt": 0.0
+    },
+    {
+      "type": "text_line_overlap",
+      "text": "2.0",
+      "text_center": [
+        91.9,
+        99.8
+      ],
+      "distance_pt": 0.0
+    },
+    {
+      "type": "text_line_overlap",
+      "text": "2.5",
+      "text_center": [
+        120.3,
+        99.8
+      ],
+      "distance_pt": 0.0
+    },
+    {
+      "type": "text_line_overlap",
+      "text": "3.0",
+      "text_center": [
+        148.7,
+        99.8
+      ],
+      "distance_pt": 0.0
+    },
+    {
+      "type": "text_curve_overlap",
+      "text": "3.0",
+      "text_center": [
+        148.7,
+        99.8
+      ],
+      "distance_pt": 1.8
+    }
+  ],
+  "coordinate_normalized_issues": [
+    {
+      "type": "text_text_overlap",
+      "text_a": "DKL(Ppp‖P*)/N",
+      "bbox_a": [
+        8.3,
+        120.9,
+        17.1,
+        168.9
+      ],
+      "text_b": "B)",
+      "bbox_b": [
+        3.7,
+        115.4,
+        14.7,
+        124.4
+      ]
+    },
+    {
+      "type": "text_curve_overlap",
+      "text": "3.0",
+      "text_center": [
+        148.7,
+        99.8
+      ],
+      "distance_pt": 1.8
+    }
+  ],
+  "status": "FAIL",
+  "labels": 36,
+  "lines": 24,
+  "curves": 18,
+  "embedded_images": 0,
+  "thresholds": "unchanged upstream defaults; only line endpoint coordinate origin normalized"
+}

@@ -1,0 +1,23 @@
+{
+  "files_sha256": {
+    ".gitignore": "044c68d5ae0d63e893ab3f1fc31a185d36625b13e3f7c4b3d60f1a179528f87f",
+    "README.md": "d934693efd0816e35a6904c7f7d0f08d5564688ede63dd74c90f7ce47fba4a11",
+    "data/forward/pp_fwd_kl_4gamma.csv": "8bbd95d6f2ee8a895b9f167556ac3949dcfd84cd71cd5e98dac9b0d8577af9df",
+    "data/reverse/pp_rev_kl_2gamma.csv": "2392f882cca89175d71993f3a602d493bb9644044a1886ce69144552ba5959dc",
+    "generate_forward.jl": "cf7d08a64595976814b1c2b4701d7ce5274e8204e0d0744584dbb6271daa2532",
+    "generate_reverse.jl": "d39789289a4e7c0807fdba69a8ceba64fdb1ab76c1f3dc3cd6727e939a12e285",
+    "plot_forward.py": "0ea5905f73d54fc6aa11e751cb0f252f8ac3da467b1baefd53e227abb9fb0ff9",
+    "plot_forward.py.lock": "78badbae415464d58354b693e91930be6996accfbbf728e75542c98cf18d670c",
+    "plot_reverse.py": "eb1f0a41a92aa86a281f65a176cfb02578aacea900259eacd1937a3ef58a1e03",
+    "plot_reverse.py.lock": "b61ff9177368bdd588793169005ae4bab3157402d19a39b9636218200f12843c",
+    "validation/forward_layout.json": "2b63444a8a817e0ada7c16bf12840fd1988879ea56bb2b52d654ad3196e6a0a3",
+    "validation/reproduction.json": "4515cfa861fd151f81792b2aff3a92cdd34d6c6ffca7d028542e23e57e1ccef9",
+    "validation/reverse_layout.json": "6f77edbd2342470aac558b0cecbe755ac98cf06703a0677979c03b6a0d396ccb",
+    "verify.py": "d2508b06d42fefcc39693d2b485c14de06afd0743ee65783bf360d5d9346e3bd",
+    "verify.py.lock": "2bac80f116f261961d1bf94e123e44120e8350c2bdf91e167c294327d32eda5c"
+  },
+  "reference_figures": "../reference_figures",
+  "curve_source": "../_lib/UndersampledSphericalBMs2025/src/teacher_student.jl",
+  "curve_source_sha256": "8f52976502b667a1f8919d949c5abb849dc55d7fdc7310cba5c26e4b4109ea2e",
+  "manuscript_revision": "4b5ca38194aabdd821906c623dc427a8497831fb"
+}

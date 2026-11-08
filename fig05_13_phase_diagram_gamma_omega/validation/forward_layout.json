@@ -1,0 +1,13 @@
+{
+  "pdf": "reproduced/fig_fwd_pp_kl_phase_diagram.pdf",
+  "pdf_sha256": "7e5134d542f6a39098aafccc7e68dea836558c2ed2b05f197b6bdeb2ebdfa2a3",
+  "validator_sha256": "79af7a62d492eb4e221cc93c60fd670a7156e27b4aa78263f00cecfaffe6a9a9",
+  "original_issues": [],
+  "coordinate_normalized_issues": [],
+  "status": "PASS",
+  "labels": 28,
+  "lines": 23,
+  "curves": 20,
+  "embedded_images": 0,
+  "thresholds": "unchanged upstream defaults; only line endpoint coordinate origin normalized"
+}

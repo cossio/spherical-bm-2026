@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "reverse": {
+      "table_shape": [
+        400,
+        4
+      ],
+      "reference_sha256": "9a0a6c63cdf5cce6c000b17333bd5d847b59155ace3e7dc8b4070e1424cf068b",
+      "rendered_pixels_identical_at_144dpi": true,
+      "curves_recomputed": false
+    },
+    "forward": {
+      "table_shape": [
+        600,
+        5
+      ],
+      "reference_sha256": "a5d6568cca4d531f3c443024947543aedde08bb304268cbd0b2bc7dce314538a",
+      "rendered_pixels_identical_at_144dpi": true,
+      "curves_recomputed": false
+    }
+  },
+  "rendering_version": "matplotlib3.11.2"
+}

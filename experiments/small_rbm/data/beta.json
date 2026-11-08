@@ -1,0 +1,12 @@
+{
+  "teacher_data_mode_reference": {
+    "n_datasets": 8,
+    "mean": 0.4690412390024438,
+    "ci95": [
+      0.46106658275955453,
+      0.4770158952453331
+    ]
+  },
+  "source_curves_sha256": "9408d87a11d79e3c8300fc6632b4655106a9f4be3aef8d45c58e8e633c2b3321",
+  "source_report_sha256": "ee72de58b7e4425cf16c4bfa0cb2c8ff304cea9030d931763461a4827e189dd2"
+}

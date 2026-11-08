@@ -1,0 +1,51 @@
+{
+  "reference": {
+    "file": "fig_sbm_vs_gaussian.pdf",
+    "sha256": "3a2c961703070e0626e9785a5ca72d8643a3f720eb208fc37e0682843cd89881",
+    "page_size_pt": [
+      297.0,
+      278.0
+    ],
+    "pixels": [
+      594,
+      556
+    ]
+  },
+  "generated": {
+    "file": "fig_sbm_vs_gaussian.pdf",
+    "sha256": "3eb7938aa4983975c2902869904efcc4bd38026e806f92ded8c03a5d536d36e6",
+    "page_size_pt": [
+      297.0,
+      278.0
+    ],
+    "pixels": [
+      594,
+      556
+    ]
+  },
+  "comparison": {
+    "dpi": 144,
+    "same_dimensions": true,
+    "changed_pixels": 1783,
+    "max_channel_difference": 248,
+    "mean_absolute_channel_difference": 0.3846337071756736,
+    "pixel_identical": false,
+    "changed_pixels_outside_text_bounds_with_2pt_padding": 0
+  },
+  "manuscript_revision": "4b5ca38194aabdd821906c623dc427a8497831fb",
+  "date": "2026-11-07",
+  "environment": {
+    "Julia": "1.12.6",
+    "Makie": "0.24.15",
+    "CairoMakie": "0.15.15",
+    "MathTeXEngine": "0.6.9",
+    "Cairo_jll": "1.18.8+0"
+  },
+  "render_source": "USBMs2025.jl/figures/fig_sbm_vs_gaussian_pub.jl",
+  "validator": {
+    "reference": "PASS: No layout issues detected.",
+    "generated": "PASS: No layout issues detected.",
+    "thresholds": "bundled defaults"
+  },
+  "embedded_images": 0
+}

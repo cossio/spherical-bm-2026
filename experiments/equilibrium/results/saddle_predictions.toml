@@ -1,0 +1,98 @@
+[coalescence_boundary]
+c = [1.25, 0.75]
+d = 2
+edge = 1.3333333333333333
+eta = 4.0
+gamma = 0.5625
+h_squared = 0.25
+lambda = [1.6666666666666665, 1.6666666666666665]
+o = 2
+phase = "ferromagnetic_outlier"
+u_squared = [0.85, 0.75]
+
+[condensation_boundary]
+c = [1.25, 0.75]
+d = 0
+edge = 0.8944271909999159
+eta = 4.0
+gamma = 1.25
+h_squared = 0.0
+lambda = [1.2, 0.9333333333333333]
+o = 2
+phase = "paramagnetic"
+u_squared = [0.8, 0.4444444444444444]
+
+[deep_coalesced]
+c = [1.25, 0.75]
+d = 2
+edge = 2.0
+eta = 4.0
+gamma = 0.25
+h_squared = 0.5
+lambda = [2.5, 2.5]
+o = 2
+phase = "ferromagnetic_outlier"
+u_squared = [0.9, 0.8333333333333334]
+
+[edge_coalesced]
+c = [1.25, 0.75]
+d = 2
+edge = 7.302967433402215
+eta = 0.5
+gamma = 0.15
+h_squared = 0.726138721247417
+lambda = [7.302967433402215, 7.302967433402215]
+o = 2
+phase = "ferromagnetic_sticky"
+u_squared = [0.5618219539958671, 0.26970325665977857]
+
+[one_condensed]
+c = [1.25, 0.75]
+d = 1
+edge = 1.1952286093343936
+eta = 4.0
+gamma = 0.7
+h_squared = 0.19189042063467954
+lambda = [1.5260665051028157, 1.4047619047619047]
+o = 2
+phase = "ferromagnetic_outlier"
+u_squared = [0.8383780841269359, 0.6888888888888889]
+
+[pm_bulk]
+c = [1.25, 0.75]
+d = 0
+edge = 1.6329931618554523
+eta = 0.5
+gamma = 3.0
+h_squared = 0.0
+lambda = [1.6329931618554523, 1.6329931618554523]
+o = 0
+phase = "paramagnetic"
+u_squared = [0.0, 0.0]
+
+[pm_outlier]
+c = [1.25, 0.75]
+d = 0
+edge = 0.8164965809277261
+eta = 4.0
+gamma = 1.5
+h_squared = 0.0
+lambda = [1.0333333333333334, 0.8333333333333333]
+o = 2
+phase = "paramagnetic"
+u_squared = [0.76, 0.33333333333333337]
+
+[provenance]
+rmt_sha256 = "e18e09635b3a03306271837104c050074ad75e6b1a01e25b541f3d227627e40a"
+
+[two_condensed]
+c = [1.25, 0.75]
+d = 2
+edge = 1.5811388300841895
+eta = 4.0
+gamma = 0.4
+h_squared = 0.3675444679663241
+lambda = [1.9764235376052368, 1.9764235376052368]
+o = 2
+phase = "ferromagnetic_outlier"
+u_squared = [0.8735088935932649, 0.7891814893221081]

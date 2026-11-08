@@ -1,0 +1,8 @@
+{
+  "self_test": "PASS",
+  "iid_rhat": 0.9999021032845579,
+  "separated_rhat": 1.5379312453542493,
+  "ar1_mcse_over_naive": 5.80697467369522,
+  "ar1_bulk_ess": 594.4828447195074,
+  "command": "uv run --locked scripts/analyze.py --self-test"
+}
